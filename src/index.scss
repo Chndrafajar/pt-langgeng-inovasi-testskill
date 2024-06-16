@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'League Spartan', sans-serif;
+}
+
+$primary-color: #673de6;
+
+// navbar css
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  height: 80px;
+  top: 0px;
+  border-bottom: 1px solid #dee2e6;
+  background-color: #fff;
+
+  .container {
+    .navbar-brand {
+      font-weight: 600;
+      text-transform: uppercase;
+      span {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+//css home page
+.home-page {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  .container {
+    .row {
+      .col-lg-4 {
+        margin-bottom: 20px;
+        .card {
+          padding: 20px;
+        }
+      }
+    }
+  }
+}
+
+// placeholder css
+
+.placeholder {
+  background-color: #fff;
+  margin-bottom: 10px;
+  width: 100%;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+@keyframes bg-spin {
+  50% {
+    opacity: 0.4;
+  }
+}
+
+.placeholder-id {
+  width: 50%;
+  .item-id {
+    width: 50%;
+    margin-bottom: 20px;
+    height: 25px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: rgb(134, 140, 155);
+    animation-duration: 5s;
+    animation: bg-spin 3s linear infinite;
+    margin-bottom: 10px;
+  }
+}
+
+.placeholder-hr {
+  padding: 10px 0px;
+  width: 100%;
+  .item-hr {
+    margin-bottom: 20px;
+    height: 25px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: rgb(134, 140, 155);
+    animation-duration: 5s;
+    animation: bg-spin 3s linear infinite;
+    margin-bottom: 10px;
+  }
+}
+
+.placeholder-info {
+  width: 100%;
+}
+
+.placeholder-title {
+  width: 100%;
+  height: 25px;
+  width: 70%;
+  border-radius: 15px;
+  background-color: rgb(134, 140, 155);
+  animation-duration: 5s;
+  animation: bg-spin 3s linear infinite;
+}
+.placeholder-desc {
+  width: 100%;
+  height: 25px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 15px;
+  background-color: rgb(134, 140, 155);
+  animation-duration: 5s;
+  animation: bg-spin 3s linear infinite;
+}
+
+//footer css
+.footer {
+  height: 70px;
+  background: $primary-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h6 {
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+}
